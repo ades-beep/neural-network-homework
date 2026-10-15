@@ -1,0 +1,20 @@
+# ===== 数据集 =====
+# Fashion-MNIST 会自动下载到这里，体积大且可复现，不入库
+data/
+
+# ===== 训练权重 =====
+# 共 4.5G，且部分单文件超过 GitHub 100MB 限制；按 trainer.py 重新训练即可生成
+*.pth
+*.pt
+*_weights/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ===== 编辑器 / 系统 =====
+# .vscode/settings.json 已在首个提交中跟踪，这里显式排除其余文件
+.vscode/*
+!.vscode/settings.json
+.DS_Store

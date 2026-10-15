@@ -1,0 +1,12 @@
+# 深度学习作业运行环境
+# 安装：pip install -r requirements.txt
+#
+# torch/torchvision 装的是 CUDA 12.8 版本，如果 pip 装不到对应版本，
+# 可以显式指定官方索引：
+#   pip install torch==2.10.0 torchvision==0.25.0 --index-url https://download.pytorch.org/whl/cu128
+
+torch==2.10.0
+torchvision==0.25.0
+numpy==2.2.6
+matplotlib==3.10.9
+pandas>=2.2

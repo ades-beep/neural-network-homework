@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1251" viewBox="0 0 900 1251" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111827; }
+      .subtitle { font: 400 14px Arial, Helvetica, sans-serif; fill: #475569; }
+      .label { font: 700 14px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 400 12px Arial, Helvetica, sans-serif; fill: #334155; }
+      .tiny { font: 400 11px Arial, Helvetica, sans-serif; fill: #475569; }
+      .box { stroke-width: 1.4; rx: 8; ry: 8; }
+      .arrow { stroke: #334155; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+      .note { font: 400 12px Arial, Helvetica, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text class="title" x="450.0" y="38" text-anchor="middle">mlp3 Network Structure</text>
+  <text class="subtitle" x="450.0" y="62" text-anchor="middle">Defined in homework2/network.py</text>
+  <rect class="box" x="300.0" y="88" width="300" height="76" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="450.0" y="111" text-anchor="middle">Input</text>
+  <text class="small" x="450.0" y="129" text-anchor="middle">FashionMNIST</text>
+  <text class="small" x="450.0" y="143" text-anchor="middle">1x28x28</text>
+  <rect class="box" x="300.0" y="182" width="300" height="76" fill="#f5f5f4" stroke="#78716c"/>
+  <text class="label" x="450.0" y="205" text-anchor="middle">Flatten</text>
+  <text class="small" x="450.0" y="223" text-anchor="middle">784 features</text>
+  <path class="arrow" d="M 450.0 167 L 450.0 175"/>
+  <rect class="box" x="300.0" y="276" width="300" height="76" fill="#fef2f2" stroke="#dc2626"/>
+  <text class="label" x="450.0" y="299" text-anchor="middle">FC + ReLU + Dropout</text>
+  <text class="small" x="450.0" y="317" text-anchor="middle">784 -&gt; 1024</text>
+  <text class="small" x="450.0" y="331" text-anchor="middle">p = 0.1</text>
+  <path class="arrow" d="M 450.0 261 L 450.0 269"/>
+  <rect class="box" x="300.0" y="370" width="300" height="76" fill="#fef2f2" stroke="#dc2626"/>
+  <text class="label" x="450.0" y="393" text-anchor="middle">FC + ReLU + Dropout</text>
+  <text class="small" x="450.0" y="411" text-anchor="middle">1024 -&gt; 896</text>
+  <text class="small" x="450.0" y="425" text-anchor="middle">p = 0.1</text>
+  <path class="arrow" d="M 450.0 355 L 450.0 363"/>
+  <rect class="box" x="300.0" y="464" width="300" height="76" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="450.0" y="487" text-anchor="middle">FC + ReLU</text>
+  <text class="small" x="450.0" y="505" text-anchor="middle">896 -&gt; 768</text>
+  <path class="arrow" d="M 450.0 449 L 450.0 457"/>
+  <rect class="box" x="300.0" y="558" width="300" height="76" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="450.0" y="581" text-anchor="middle">FC + ReLU</text>
+  <text class="small" x="450.0" y="599" text-anchor="middle">768 -&gt; 640</text>
+  <path class="arrow" d="M 450.0 543 L 450.0 551"/>
+  <rect class="box" x="300.0" y="652" width="300" height="76" fill="#fef2f2" stroke="#dc2626"/>
+  <text class="label" x="450.0" y="675" text-anchor="middle">FC + ReLU + Dropout</text>
+  <text class="small" x="450.0" y="693" text-anchor="middle">640 -&gt; 512</text>
+  <text class="small" x="450.0" y="707" text-anchor="middle">p = 0.1</text>
+  <path class="arrow" d="M 450.0 637 L 450.0 645"/>
+  <rect class="box" x="300.0" y="746" width="300" height="76" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="450.0" y="769" text-anchor="middle">FC + ReLU</text>
+  <text class="small" x="450.0" y="787" text-anchor="middle">512 -&gt; 384</text>
+  <path class="arrow" d="M 450.0 731 L 450.0 739"/>
+  <rect class="box" x="300.0" y="840" width="300" height="76" fill="#fef2f2" stroke="#dc2626"/>
+  <text class="label" x="450.0" y="863" text-anchor="middle">FC + ReLU + Dropout</text>
+  <text class="small" x="450.0" y="881" text-anchor="middle">384 -&gt; 256</text>
+  <text class="small" x="450.0" y="895" text-anchor="middle">p = 0.1</text>
+  <path class="arrow" d="M 450.0 825 L 450.0 833"/>
+  <rect class="box" x="300.0" y="934" width="300" height="76" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="450.0" y="957" text-anchor="middle">FC + ReLU</text>
+  <text class="small" x="450.0" y="975" text-anchor="middle">256 -&gt; 128</text>
+  <path class="arrow" d="M 450.0 919 L 450.0 927"/>
+  <rect class="box" x="300.0" y="1028" width="300" height="76" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="450.0" y="1051" text-anchor="middle">FC + ReLU</text>
+  <text class="small" x="450.0" y="1069" text-anchor="middle">128 -&gt; 64</text>
+  <path class="arrow" d="M 450.0 1013 L 450.0 1021"/>
+  <rect class="box" x="300.0" y="1122" width="300" height="76" fill="#fefce8" stroke="#ca8a04"/>
+  <text class="label" x="450.0" y="1145" text-anchor="middle">Output</text>
+  <text class="small" x="450.0" y="1163" text-anchor="middle">Linear 64 -&gt; 10</text>
+  <text class="small" x="450.0" y="1177" text-anchor="middle">class logits</text>
+  <path class="arrow" d="M 450.0 1107 L 450.0 1115"/>
+</svg>

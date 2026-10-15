@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="240" viewBox="0 0 1600 240" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111827; }
+      .subtitle { font: 400 14px Arial, Helvetica, sans-serif; fill: #475569; }
+      .label { font: 700 14px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 400 12px Arial, Helvetica, sans-serif; fill: #334155; }
+      .tiny { font: 400 11px Arial, Helvetica, sans-serif; fill: #475569; }
+      .box { stroke-width: 1.4; rx: 8; ry: 8; }
+      .arrow { stroke: #334155; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+      .note { font: 400 12px Arial, Helvetica, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text class="title" x="800.0" y="38" text-anchor="middle">VGG19 Network Structure</text>
+  <text class="subtitle" x="800.0" y="62" text-anchor="middle">torchvision.models.vgg19 with final classifier changed to 10 classes</text>
+  <rect class="box" x="52.0" y="92" width="150" height="100" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="127.0" y="115" text-anchor="middle">Input</text>
+  <text class="small" x="127.0" y="133" text-anchor="middle">3x224x224 image</text>
+  <rect class="box" x="220.25" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="295.25" y="115" text-anchor="middle">VGG Block 1</text>
+  <text class="small" x="295.25" y="133" text-anchor="middle">2 x Conv3x3, 64</text>
+  <text class="small" x="295.25" y="147" text-anchor="middle">MaxPool</text>
+  <rect class="box" x="388.5" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="463.5" y="115" text-anchor="middle">VGG Block 2</text>
+  <text class="small" x="463.5" y="133" text-anchor="middle">2 x Conv3x3, 128</text>
+  <text class="small" x="463.5" y="147" text-anchor="middle">MaxPool</text>
+  <rect class="box" x="556.75" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="631.75" y="115" text-anchor="middle">VGG Block 3</text>
+  <text class="small" x="631.75" y="133" text-anchor="middle">4 x Conv3x3, 256</text>
+  <text class="small" x="631.75" y="147" text-anchor="middle">MaxPool</text>
+  <rect class="box" x="725.0" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="800.0" y="115" text-anchor="middle">VGG Block 4</text>
+  <text class="small" x="800.0" y="133" text-anchor="middle">4 x Conv3x3, 512</text>
+  <text class="small" x="800.0" y="147" text-anchor="middle">MaxPool</text>
+  <rect class="box" x="893.25" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="968.25" y="115" text-anchor="middle">VGG Block 5</text>
+  <text class="small" x="968.25" y="133" text-anchor="middle">4 x Conv3x3, 512</text>
+  <text class="small" x="968.25" y="147" text-anchor="middle">MaxPool</text>
+  <rect class="box" x="1061.5" y="92" width="150" height="100" fill="#f0fdfa" stroke="#0f766e"/>
+  <text class="label" x="1136.5" y="115" text-anchor="middle">Adaptive AvgPool</text>
+  <text class="small" x="1136.5" y="133" text-anchor="middle">7x7 feature map</text>
+  <rect class="box" x="1229.75" y="92" width="150" height="100" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text class="label" x="1304.75" y="115" text-anchor="middle">Classifier</text>
+  <text class="small" x="1304.75" y="133" text-anchor="middle">25088 -&gt; 4096 -&gt;</text>
+  <text class="small" x="1304.75" y="147" text-anchor="middle">4096 -&gt; 10</text>
+  <text class="small" x="1304.75" y="161" text-anchor="middle">Dropout + ReLU</text>
+  <rect class="box" x="1398.0" y="92" width="150" height="100" fill="#fefce8" stroke="#ca8a04"/>
+  <text class="label" x="1473.0" y="115" text-anchor="middle">Output</text>
+  <text class="small" x="1473.0" y="133" text-anchor="middle">10 class logits</text>
+  <path class="arrow" d="M 206.0 142.0 L 212.25 142.0"/>
+  <path class="arrow" d="M 374.25 142.0 L 380.5 142.0"/>
+  <path class="arrow" d="M 542.5 142.0 L 548.75 142.0"/>
+  <path class="arrow" d="M 710.75 142.0 L 717.0 142.0"/>
+  <path class="arrow" d="M 879.0 142.0 L 885.25 142.0"/>
+  <path class="arrow" d="M 1047.25 142.0 L 1053.5 142.0"/>
+  <path class="arrow" d="M 1215.5 142.0 L 1221.75 142.0"/>
+  <path class="arrow" d="M 1383.75 142.0 L 1390.0 142.0"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="240" viewBox="0 0 1040 240" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111827; }
+      .subtitle { font: 400 14px Arial, Helvetica, sans-serif; fill: #475569; }
+      .label { font: 700 14px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 400 12px Arial, Helvetica, sans-serif; fill: #334155; }
+      .tiny { font: 400 11px Arial, Helvetica, sans-serif; fill: #475569; }
+      .box { stroke-width: 1.4; rx: 8; ry: 8; }
+      .arrow { stroke: #334155; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+      .note { font: 400 12px Arial, Helvetica, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text class="title" x="520.0" y="38" text-anchor="middle">mlp1 Network Structure</text>
+  <text class="subtitle" x="520.0" y="62" text-anchor="middle">Defined in homework2/network.py</text>
+  <rect class="box" x="52.0" y="92" width="138" height="86" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="121.0" y="115" text-anchor="middle">Input</text>
+  <text class="small" x="121.0" y="133" text-anchor="middle">FashionMNIST</text>
+  <text class="small" x="121.0" y="147" text-anchor="middle">1x28x28</text>
+  <rect class="box" x="211.6" y="92" width="138" height="86" fill="#f5f5f4" stroke="#78716c"/>
+  <text class="label" x="280.6" y="115" text-anchor="middle">Flatten</text>
+  <text class="small" x="280.6" y="133" text-anchor="middle">784 features</text>
+  <rect class="box" x="371.2" y="92" width="138" height="86" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="440.2" y="115" text-anchor="middle">Linear</text>
+  <text class="small" x="440.2" y="133" text-anchor="middle">784 -&gt; 128</text>
+  <rect class="box" x="530.8" y="92" width="138" height="86" fill="#fff7ed" stroke="#ea580c"/>
+  <text class="label" x="599.8" y="115" text-anchor="middle">ReLU</text>
+  <text class="small" x="599.8" y="133" text-anchor="middle">nonlinearity</text>
+  <rect class="box" x="690.4" y="92" width="138" height="86" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="759.4" y="115" text-anchor="middle">Linear</text>
+  <text class="small" x="759.4" y="133" text-anchor="middle">128 -&gt; 10</text>
+  <rect class="box" x="850.0" y="92" width="138" height="86" fill="#fefce8" stroke="#ca8a04"/>
+  <text class="label" x="919.0" y="115" text-anchor="middle">Output</text>
+  <text class="small" x="919.0" y="133" text-anchor="middle">10 class logits</text>
+  <path class="arrow" d="M 194.0 135.0 L 203.6 135.0"/>
+  <path class="arrow" d="M 353.6 135.0 L 363.2 135.0"/>
+  <path class="arrow" d="M 513.2 135.0 L 522.8 135.0"/>
+  <path class="arrow" d="M 672.8 135.0 L 682.4 135.0"/>
+  <path class="arrow" d="M 832.4 135.0 L 842.0 135.0"/>
+</svg>

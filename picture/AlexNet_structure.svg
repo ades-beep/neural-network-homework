@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1660" height="240" viewBox="0 0 1660 240" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111827; }
+      .subtitle { font: 400 14px Arial, Helvetica, sans-serif; fill: #475569; }
+      .label { font: 700 14px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 400 12px Arial, Helvetica, sans-serif; fill: #334155; }
+      .tiny { font: 400 11px Arial, Helvetica, sans-serif; fill: #475569; }
+      .box { stroke-width: 1.4; rx: 8; ry: 8; }
+      .arrow { stroke: #334155; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+      .note { font: 400 12px Arial, Helvetica, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text class="title" x="830.0" y="38" text-anchor="middle">AlexNet Network Structure</text>
+  <text class="subtitle" x="830.0" y="62" text-anchor="middle">torchvision.models.alexnet with final classifier changed to 10 classes</text>
+  <rect class="box" x="52.0" y="92" width="150" height="100" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="127.0" y="115" text-anchor="middle">Input</text>
+  <text class="small" x="127.0" y="133" text-anchor="middle">3x224x224 image</text>
+  <rect class="box" x="227.75" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="302.75" y="115" text-anchor="middle">Conv Stage 1</text>
+  <text class="small" x="302.75" y="133" text-anchor="middle">Conv 11x11 s4, 64</text>
+  <text class="small" x="302.75" y="147" text-anchor="middle">ReLU + MaxPool</text>
+  <rect class="box" x="403.5" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="478.5" y="115" text-anchor="middle">Conv Stage 2</text>
+  <text class="small" x="478.5" y="133" text-anchor="middle">Conv 5x5, 192</text>
+  <text class="small" x="478.5" y="147" text-anchor="middle">ReLU + MaxPool</text>
+  <rect class="box" x="579.25" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="654.25" y="115" text-anchor="middle">Conv Stage 3</text>
+  <text class="small" x="654.25" y="133" text-anchor="middle">Conv 3x3, 384</text>
+  <text class="small" x="654.25" y="147" text-anchor="middle">ReLU</text>
+  <rect class="box" x="755.0" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="830.0" y="115" text-anchor="middle">Conv Stage 4</text>
+  <text class="small" x="830.0" y="133" text-anchor="middle">Conv 3x3, 256</text>
+  <text class="small" x="830.0" y="147" text-anchor="middle">ReLU</text>
+  <rect class="box" x="930.75" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="1005.75" y="115" text-anchor="middle">Conv Stage 5</text>
+  <text class="small" x="1005.75" y="133" text-anchor="middle">Conv 3x3, 256</text>
+  <text class="small" x="1005.75" y="147" text-anchor="middle">ReLU + MaxPool</text>
+  <rect class="box" x="1106.5" y="92" width="150" height="100" fill="#f0fdfa" stroke="#0f766e"/>
+  <text class="label" x="1181.5" y="115" text-anchor="middle">Adaptive AvgPool</text>
+  <text class="small" x="1181.5" y="133" text-anchor="middle">6x6 feature map</text>
+  <rect class="box" x="1282.25" y="92" width="150" height="100" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text class="label" x="1357.25" y="115" text-anchor="middle">Classifier</text>
+  <text class="small" x="1357.25" y="133" text-anchor="middle">9216 -&gt; 4096 -&gt; 4096</text>
+  <text class="small" x="1357.25" y="147" text-anchor="middle">-&gt; 10</text>
+  <text class="small" x="1357.25" y="161" text-anchor="middle">Dropout + ReLU</text>
+  <rect class="box" x="1458.0" y="92" width="150" height="100" fill="#fefce8" stroke="#ca8a04"/>
+  <text class="label" x="1533.0" y="115" text-anchor="middle">Output</text>
+  <text class="small" x="1533.0" y="133" text-anchor="middle">10 class logits</text>
+  <path class="arrow" d="M 206.0 142.0 L 219.75 142.0"/>
+  <path class="arrow" d="M 381.75 142.0 L 395.5 142.0"/>
+  <path class="arrow" d="M 557.5 142.0 L 571.25 142.0"/>
+  <path class="arrow" d="M 733.25 142.0 L 747.0 142.0"/>
+  <path class="arrow" d="M 909.0 142.0 L 922.75 142.0"/>
+  <path class="arrow" d="M 1084.75 142.0 L 1098.5 142.0"/>
+  <path class="arrow" d="M 1260.5 142.0 L 1274.25 142.0"/>
+  <path class="arrow" d="M 1436.25 142.0 L 1450.0 142.0"/>
+</svg>

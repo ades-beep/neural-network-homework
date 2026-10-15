@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1660" height="240" viewBox="0 0 1660 240" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111827; }
+      .subtitle { font: 400 14px Arial, Helvetica, sans-serif; fill: #475569; }
+      .label { font: 700 14px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 400 12px Arial, Helvetica, sans-serif; fill: #334155; }
+      .box { stroke-width: 1.4; rx: 8; ry: 8; }
+      .arrow { stroke: #334155; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text class="title" x="830" y="38" text-anchor="middle">ResNet50 Network Structure</text>
+  <text class="subtitle" x="830" y="62" text-anchor="middle">torchvision.models.resnet50 with final fc changed to 10 classes</text>
+
+  <rect class="box" x="52" y="92" width="150" height="100" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="127" y="116" text-anchor="middle">Input</text>
+  <text class="small" x="127" y="142" text-anchor="middle">3x224x224 image</text>
+
+  <rect class="box" x="230" y="92" width="150" height="100" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="305" y="116" text-anchor="middle">Stem</text>
+  <text class="small" x="305" y="142" text-anchor="middle">Conv 7x7 s2, 64</text>
+  <text class="small" x="305" y="156" text-anchor="middle">BN + ReLU</text>
+  <text class="small" x="305" y="170" text-anchor="middle">MaxPool 3x3 s2</text>
+
+  <rect class="box" x="408" y="92" width="150" height="100" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="483" y="116" text-anchor="middle">Layer 1</text>
+  <text class="small" x="483" y="142" text-anchor="middle">3 bottleneck blocks</text>
+  <text class="small" x="483" y="156" text-anchor="middle">output: 256 channels</text>
+
+  <rect class="box" x="586" y="92" width="150" height="100" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="661" y="116" text-anchor="middle">Layer 2</text>
+  <text class="small" x="661" y="142" text-anchor="middle">4 bottleneck blocks</text>
+  <text class="small" x="661" y="156" text-anchor="middle">stride 2</text>
+  <text class="small" x="661" y="170" text-anchor="middle">output: 512 channels</text>
+
+  <rect class="box" x="764" y="92" width="150" height="100" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="839" y="116" text-anchor="middle">Layer 3</text>
+  <text class="small" x="839" y="142" text-anchor="middle">6 bottleneck blocks</text>
+  <text class="small" x="839" y="156" text-anchor="middle">stride 2</text>
+  <text class="small" x="839" y="170" text-anchor="middle">output: 1024 channels</text>
+
+  <rect class="box" x="942" y="92" width="150" height="100" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="1017" y="116" text-anchor="middle">Layer 4</text>
+  <text class="small" x="1017" y="142" text-anchor="middle">3 bottleneck blocks</text>
+  <text class="small" x="1017" y="156" text-anchor="middle">stride 2</text>
+  <text class="small" x="1017" y="170" text-anchor="middle">output: 2048 channels</text>
+
+  <rect class="box" x="1120" y="92" width="150" height="100" fill="#f0fdfa" stroke="#0f766e"/>
+  <text class="label" x="1195" y="116" text-anchor="middle">Adaptive AvgPool</text>
+  <text class="small" x="1195" y="142" text-anchor="middle">1x1 feature map</text>
+
+  <rect class="box" x="1298" y="92" width="150" height="100" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text class="label" x="1373" y="116" text-anchor="middle">Classifier</text>
+  <text class="small" x="1373" y="142" text-anchor="middle">Flatten</text>
+  <text class="small" x="1373" y="156" text-anchor="middle">Linear 2048 -> 10</text>
+
+  <rect class="box" x="1476" y="92" width="150" height="100" fill="#fefce8" stroke="#ca8a04"/>
+  <text class="label" x="1551" y="116" text-anchor="middle">Output</text>
+  <text class="small" x="1551" y="142" text-anchor="middle">10 class logits</text>
+
+  <path class="arrow" d="M 206 142 L 222 142"/>
+  <path class="arrow" d="M 384 142 L 400 142"/>
+  <path class="arrow" d="M 562 142 L 578 142"/>
+  <path class="arrow" d="M 740 142 L 756 142"/>
+  <path class="arrow" d="M 918 142 L 934 142"/>
+  <path class="arrow" d="M 1096 142 L 1112 142"/>
+  <path class="arrow" d="M 1274 142 L 1290 142"/>
+  <path class="arrow" d="M 1452 142 L 1468 142"/>
+</svg>

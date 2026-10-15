@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="860" viewBox="0 0 1500 860" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155" />
+    </marker>
+    <style>
+      .title { font: 700 28px Arial, Helvetica, sans-serif; fill: #111827; }
+      .subtitle { font: 400 14px Arial, Helvetica, sans-serif; fill: #475569; }
+      .label { font: 700 14px Arial, Helvetica, sans-serif; fill: #111827; }
+      .small { font: 400 12px Arial, Helvetica, sans-serif; fill: #334155; }
+      .tiny { font: 400 11px Arial, Helvetica, sans-serif; fill: #475569; }
+      .box { stroke-width: 1.4; rx: 8; ry: 8; }
+      .arrow { stroke: #334155; stroke-width: 1.8; fill: none; marker-end: url(#arrow); }
+      .note { font: 400 12px Arial, Helvetica, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text class="title" x="750.0" y="42" text-anchor="middle">Five Network Structures Overview</text>
+  <text class="subtitle" x="750.0" y="68" text-anchor="middle">mlp1, mlp2, mlp3, AlexNet, and VGG19 from homework2/network.py</text>
+  <rect class="box" x="52" y="115" width="256" height="660" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="180.0" y="147" text-anchor="middle">mlp1</text>
+  <rect class="box" x="76" y="191" width="208" height="72" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="180.0" y="214" text-anchor="middle">Input 1x28x28</text>
+  <path class="arrow" d="M 180.0 267 L 180.0 293"/>
+  <rect class="box" x="76" y="297" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="180.0" y="320" text-anchor="middle">Flatten 784</text>
+  <path class="arrow" d="M 180.0 373 L 180.0 399"/>
+  <rect class="box" x="76" y="403" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="180.0" y="426" text-anchor="middle">784 -&gt; 128 -&gt; 10</text>
+  <rect class="box" x="336" y="115" width="256" height="660" fill="#ecfdf5" stroke="#15803d"/>
+  <text class="label" x="464.0" y="147" text-anchor="middle">mlp2</text>
+  <rect class="box" x="360" y="191" width="208" height="72" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="464.0" y="214" text-anchor="middle">Input 1x28x28</text>
+  <path class="arrow" d="M 464.0 267 L 464.0 293"/>
+  <rect class="box" x="360" y="297" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="464.0" y="320" text-anchor="middle">Flatten 784</text>
+  <path class="arrow" d="M 464.0 373 L 464.0 399"/>
+  <rect class="box" x="360" y="403" width="208" height="92" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="464.0" y="426" text-anchor="middle">784 -&gt; 1024 -&gt; 512 -&gt; 256</text>
+  <text class="small" x="464.0" y="442" text-anchor="middle">-&gt; 128 -&gt; 64 -&gt; 10</text>
+  <rect class="box" x="620" y="115" width="256" height="660" fill="#fef2f2" stroke="#dc2626"/>
+  <text class="label" x="748.0" y="147" text-anchor="middle">mlp3</text>
+  <rect class="box" x="644" y="191" width="208" height="72" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="748.0" y="214" text-anchor="middle">Input 1x28x28</text>
+  <path class="arrow" d="M 748.0 267 L 748.0 293"/>
+  <rect class="box" x="644" y="297" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="748.0" y="320" text-anchor="middle">Flatten 784</text>
+  <path class="arrow" d="M 748.0 373 L 748.0 399"/>
+  <rect class="box" x="644" y="403" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="748.0" y="426" text-anchor="middle">Deep FC stack with</text>
+  <text class="small" x="748.0" y="442" text-anchor="middle">Dropout(0.1)</text>
+  <path class="arrow" d="M 748.0 479 L 748.0 505"/>
+  <rect class="box" x="644" y="509" width="208" height="92" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="748.0" y="532" text-anchor="middle">784 -&gt; 1024 -&gt; 896 -&gt; 768</text>
+  <text class="small" x="748.0" y="548" text-anchor="middle">-&gt; 640 -&gt; 512 -&gt; 384 -&gt;</text>
+  <rect class="box" x="904" y="115" width="256" height="660" fill="#eff6ff" stroke="#2563eb"/>
+  <text class="label" x="1032.0" y="147" text-anchor="middle">AlexNet</text>
+  <rect class="box" x="928" y="191" width="208" height="72" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="1032.0" y="214" text-anchor="middle">Input 3x224x224</text>
+  <path class="arrow" d="M 1032.0 267 L 1032.0 293"/>
+  <rect class="box" x="928" y="297" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="1032.0" y="320" text-anchor="middle">5 convolution stages</text>
+  <path class="arrow" d="M 1032.0 373 L 1032.0 399"/>
+  <rect class="box" x="928" y="403" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="1032.0" y="426" text-anchor="middle">AdaptiveAvgPool 6x6</text>
+  <path class="arrow" d="M 1032.0 479 L 1032.0 505"/>
+  <rect class="box" x="928" y="509" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="1032.0" y="532" text-anchor="middle">9216 -&gt; 4096 -&gt; 4096 -&gt; 10</text>
+  <rect class="box" x="1188" y="115" width="256" height="660" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text class="label" x="1316.0" y="147" text-anchor="middle">VGG19</text>
+  <rect class="box" x="1212" y="191" width="208" height="72" fill="#eef7ff" stroke="#2f6f9f"/>
+  <text class="label" x="1316.0" y="214" text-anchor="middle">Input 3x224x224</text>
+  <path class="arrow" d="M 1316.0 267 L 1316.0 293"/>
+  <rect class="box" x="1212" y="297" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="1316.0" y="320" text-anchor="middle">5 VGG convolution blocks</text>
+  <path class="arrow" d="M 1316.0 373 L 1316.0 399"/>
+  <rect class="box" x="1212" y="403" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="1316.0" y="426" text-anchor="middle">AdaptiveAvgPool 7x7</text>
+  <path class="arrow" d="M 1316.0 479 L 1316.0 505"/>
+  <rect class="box" x="1212" y="509" width="208" height="72" fill="#fafafa" stroke="#525252"/>
+  <text class="label" x="1316.0" y="532" text-anchor="middle">25088 -&gt; 4096 -&gt; 4096 -&gt;</text>
+  <text class="small" x="1316.0" y="548" text-anchor="middle">10</text>
+  <text class="note" x="750.0" y="825" text-anchor="middle">CNN inputs are labeled according to trainer.py preprocessing: Resize(224,224) + Grayscale(num_output_channels=3).</text>
+</svg>

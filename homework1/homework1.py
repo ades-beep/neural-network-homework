@@ -46,5 +46,5 @@ plt.ylabel('y')
 plt.grid(True, linestyle='--', alpha=0.6)
 
 plt.tight_layout() #自动调整整张画布里面所有子图、标题、坐标轴标签的位置
-plt.savefig("images/activation.png", dpi=300, bbox_inches='tight')
+plt.savefig("homework1/images/activation.png", dpi=300)
 plt.show()
